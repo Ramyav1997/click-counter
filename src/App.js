@@ -6,11 +6,13 @@ import { render } from '@testing-library/react';
 class App extends React.Component{
   render() {
     return (
+      <div>
+        <h1> Counting the number of times the Button is Clicked !</h1>
+     <button onClick ={this.props.onClick} >
+       click me </button><br/>
      
-        <div onClick ={this.props.onClick} >this div is clicked {this.props.clicks} times</div>
-     
-      
-
+    <h3>The button is clicked {this.props.clicks} </h3>
+      </div>
     );
   }
 }
